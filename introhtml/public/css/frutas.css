@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor {border: 0.3rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.caja {
+    width: 10rem;
+    height: 10rem;
+}
+.manzana {
+    background-color: red;
+
+}
+.platano {
+    background-color: yellow;
+
+}.uva {
+    background-color: violet;
+
+}
+.naranja {
+    background-color: orange;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    z-index: -1;
+
+}
+.pera {
+    background-color: green;
+
+}
+.limon {
+    background-color: greenyellow;
+
+}
+.mas {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255,255,5,0.9) ;
+    transition: border-radius 500ms;
+}
+.mas:hover {
+    background-color:  rgba(255,255,5,0.5);
+    border-radius: 50%;
+
+}
+
+.menos {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 5, 130, 0.9);
+    animation-name: titilando;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes titilando {
+    0% {}
+    50% {
+        border-radius: 25%;
+        background-color:  rgba(255, 5, 130, 0.7);
+
+    }
+    100%{
+        border-radius: 50%;
+        background-color:  rgba(255, 5, 130, 0.5);
+    }
+}
